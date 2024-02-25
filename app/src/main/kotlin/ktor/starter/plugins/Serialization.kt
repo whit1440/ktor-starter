@@ -9,17 +9,11 @@ import kotlinx.serialization.json.Json
 
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
-//        jackson {
-//            enable(SerializationFeature.INDENT_OUTPUT)
-//        }
         json(Json {
             prettyPrint = true
         })
     }
     routing {
-        get("/json/jackson") {
-            call.respond(mapOf("hello" to "world"))
-        }
         get("/json/kotlinx-serialization") {
             call.respond(mapOf("hello" to "world"))
         }
