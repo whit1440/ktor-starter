@@ -1,8 +1,7 @@
 package ktor.starter
 
 import io.ktor.server.application.*
-import wiz.games.plugins.configureHTTP
-import wiz.games.plugins.configureRouting
+import ktor.starter.plugins.configureHTTP
 import ktor.starter.plugins.configureSerialization
 import ktor.starter.data.plugins.connectToPostgres
 

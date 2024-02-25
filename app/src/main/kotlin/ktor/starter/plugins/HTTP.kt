@@ -1,4 +1,4 @@
-package wiz.games.plugins
+package ktor.starter.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.plugins.openapi.*
